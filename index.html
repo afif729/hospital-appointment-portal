@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarePoint Hospital | Appointments</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f3f8fc;
+        color: #203040;
+      }
+      header {
+        background: #075985;
+        color: white;
+        padding: 22px 7%;
+      }
+      header h1 {
+        font-size: 30px;
+      }
+      header p {
+        margin-top: 6px;
+      }
+      nav {
+        background: #0c4a6e;
+        padding: 13px 7%;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 22px;
+      }
+      .hero {
+        padding: 36px 7%;
+        background: #dff2ff;
+      }
+      .hero h2 {
+        font-size: 29px;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        margin-top: 8px;
+      }
+      main {
+        padding: 25px 7%;
+      }
+      .section-title {
+        margin: 25px 0 15px;
+      }
+      .notice {
+        background: #fff3cd;
+        padding: 15px;
+        border-left: 5px solid #e7a008;
+        border-radius: 5px;
+      }
+      .doctors {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+      }
+      .card {
+        background: white;
+        padding: 19px;
+        border-radius: 10px;
+        border: 1px solid #d9e8f2;
+        box-shadow: 0 3px 8px #0c4a6e10;
+      }
+      .card h3 {
+        margin-bottom: 10px;
+        color: #075985;
+      }
+      .card p {
+        margin: 7px 0;
+        line-height: 1.4;
+      }
+      .slot {
+        display: inline-block;
+        margin: 5px 3px 0 0;
+        background: #e0f2fe;
+        color: #075985;
+        padding: 6px 9px;
+        border-radius: 5px;
+        font-size: 13px;
+      }
+      .available {
+        color: #16803c;
+        font-weight: bold;
+      }
+      .button {
+        display: inline-block;
+        margin-top: 10px;
+        background: #0284c7;
+        color: white;
+        padding: 10px 14px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      footer {
+        margin-top: 30px;
+        padding: 22px 7%;
+        background: #102a43;
+        color: white;
+      }
+      @media (max-width: 600px) {
+        header,
+        nav,
+        .hero,
+        main,
+        footer {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+        nav a {
+          display: inline-block;
+          margin: 5px 12px 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CarePoint Hospital</h1>
+      <p>Compassionate care. Better health. A healthier tomorrow.</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#specializations">Specializations</a>
+      <a href="#appointments">Appointment Slots</a>
+      <a href="#announcements">Announcements</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <h2>Book Your Hospital Appointment</h2>
+      <p>Find experienced doctors and explore available consultation times.</p>
+      <p><strong>Working hours:</strong> Monday–Saturday, 9:00 AM–6:00 PM</p>
+      <a class="button" href="#doctors">Explore Doctors</a>
+    </section>
+
+    <main>
+      <section id="doctors">
+        <h2 class="section-title">Our Doctors</h2>
+        <div class="doctors">
+          <article class="card">
+            <h3>Dr. Rahul Sharma</h3>
+            <p><strong>Specialization:</strong> Cardiology</p>
+            <p><strong>Experience:</strong> 12 years</p>
+            <p><strong>Consultation:</strong> ₹800</p>
+            <p><strong>Timing:</strong> 9:00 AM–1:00 PM</p>
+            <p class="available">Appointments available</p>
+            <a class="button" href="#appointments">View Slots</a>
+          </article>
+
+          <article class="card">
+            <h3>Dr. Priya Nair</h3>
+            <p><strong>Specialization:</strong> Dermatology</p>
+            <p><strong>Experience:</strong> 9 years</p>
+            <p><strong>Consultation:</strong> ₹600</p>
+            <p><strong>Timing:</strong> 10:00 AM–2:00 PM</p>
+            <p class="available">Appointments available</p>
+            <a class="button" href="#appointments">View Slots</a>
+          </article>
+
+          <article class="card">
+            <h3>Dr. Amit Verma</h3>
+            <p><strong>Specialization:</strong> General Medicine</p>
+            <p><strong>Experience:</strong> 15 years</p>
+            <p><strong>Consultation:</strong> ₹500</p>
+            <p><strong>Timing:</strong> 2:00 PM–6:00 PM</p>
+            <p class="available">Appointments available</p>
+            <a class="button" href="#appointments">View Slots</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="specializations">
+        <h2 class="section-title">Medical Specializations</h2>
+        <div class="doctors">
+          <div class="card">
+            <h3>Cardiology</h3>
+            <p>Heart and cardiovascular care.</p>
+          </div>
+          <div class="card">
+            <h3>Dermatology</h3>
+            <p>Skin, hair and nail care.</p>
+          </div>
+          <div class="card">
+            <h3>Orthopedics</h3>
+            <p>Bone, joint and muscle care.</p>
+          </div>
+          <div class="card">
+            <h3>Pediatrics</h3>
+            <p>Medical care for children.</p>
+          </div>
+          <div class="card">
+            <h3>General Medicine</h3>
+            <p>General health consultations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="appointments">
+        <h2 class="section-title">Available Appointment Slots</h2>
+        <div class="doctors">
+          <div class="card">
+            <h3>Cardiology</h3>
+            <p>Dr. Rahul Sharma</p>
+            <span class="slot">9:00 AM</span>
+            <span class="slot">10:00 AM</span>
+            <span class="slot">11:30 AM</span>
+          </div>
+          <div class="card">
+            <h3>Dermatology</h3>
+            <p>Dr. Priya Nair</p>
+            <span class="slot">10:00 AM</span>
+            <span class="slot">11:00 AM</span>
+            <span class="slot">1:30 PM</span>
+          </div>
+          <div class="card">
+            <h3>General Medicine</h3>
+            <p>Dr. Amit Verma</p>
+            <span class="slot">2:00 PM</span>
+            <span class="slot">3:00 PM</span>
+            <span class="slot">4:30 PM</span>
+          </div>
+        </div>
+        <p style="margin-top: 12px">
+          Demo only: appointment slots are illustrative and are not connected to
+          a live booking system.
+        </p>
+      </section>
+
+      <section id="announcements">
+        <h2 class="section-title">Hospital Announcements</h2>
+        <div class="notice">
+          <p>
+            <strong>Health Camp:</strong> A free general health check-up camp is
+            planned for Saturday.
+          </p>
+          <p style="margin-top: 8px">
+            <strong>New Facility:</strong> The hospital has expanded its
+            diagnostic laboratory.
+          </p>
+          <p style="margin-top: 8px">
+            <strong>Patient Notice:</strong> Please arrive 15 minutes before
+            your consultation.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>CarePoint Hospital — Online Appointment Portal</p>
+      <p>Demonstration application for CI/CD automation and rollback.</p>
+    </footer>
+  </body>
+</html>
